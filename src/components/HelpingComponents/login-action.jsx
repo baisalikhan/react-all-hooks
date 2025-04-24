@@ -44,11 +44,7 @@ const Login = () => {
       {user.data && (
         <h3 style={{ color: "green" }}>User details: {user.data.email}</h3>
       )}
-      {user.error && (
-        <h3 style={{ color: "red" }}>
-          Invalid username or password: {user.error}
-        </h3>
-      )}
+      {user.error && <h3 style={{ color: "red" }}>Error: {user.error}</h3>}
     </form>
   );
 };

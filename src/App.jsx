@@ -10,7 +10,10 @@ import "./App.css";
 // import UseId from "./components/useId";
 // import UseTransition from "./components/useTransition";
 // import UseDeferredValue from "./components/useDeferredValue";
-import UseActionState from "./components/useActionState";
+// import UseActionState from "./components/useActionState";
+// import UseFormStatus from "./components/useFormStatus";
+// import UseOptimistic from "./components/useOptimistic";
+import DataFetcher from "./components/custom-hook";
 
 const App = () => {
   return (
@@ -25,7 +28,10 @@ const App = () => {
       {/* <UseId /> */}
       {/* <UseTransition /> */}
       {/* <UseDeferredValue /> */}
-      <UseActionState />
+      {/* <UseActionState /> */}
+      {/* <UseFormStatus /> */}
+      {/* <UseOptimistic /> */}
+      <DataFetcher />
     </>
   );
 };
