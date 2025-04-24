@@ -2,7 +2,10 @@ import React, { useLayoutEffect, useState } from "react";
 
 /*
 useLayoutEffect Purpose: 
-    Like useEffect, but fires synchronously after DOM mutations. 
+    1. Like useEffect, but fires synchronously after DOM mutations.
+    2. useLayoutEffect runs synchronously after all DOM mutations 
+        but before the browser updates the screen, making it suitable 
+        for tasks that require immediate DOM measurements or mutations.
 Example: 
     Measure DOM size before paint. 
     useLayoutEffect(() => {
